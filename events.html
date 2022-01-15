@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Prompt:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4c09fc7546.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style-events.css">
+    <title>Events</title>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $('a[href*=\\#]:not([href=\\#])').on('click', function () {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            });
+        });
+    </script>
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="padding-left: 2%;padding-top: 1.5%;" href="#">
+            <img src="iit-logo.png" alt="" width="45" alt="" class="d-inline-block align-middle mr-2">
+          </a>
+          
+          <a class="navbar-brand" href="#" style="padding-top: 1.5%;">
+            <img src="logoiiche.png" alt="" width="50" alt="" class="d-inline-block align-middle mr-2">
+          </a>
+          <a class="navbar-brand" href="#" style="padding-top: 1.5%;">
+            <img src="Screenshot_2022-01-05_at_11.57.17_AM-removebg-preview.png" alt="" width="50" alt="" class="d-inline-block align-middle mr-2">
+          </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto god">
+              <li class="nav-item active "><a href="index.html" class="nav-link navbar-text">Home<span class="sr-only">(current)</span></a></li>
+              <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+              <li class="nav-item "><a href="events.html" class="nav-link navbar-text">Events</a></li>
+              <li class="nav-item"><a href="index.html#contact" class="nav-link navbar-text">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- CARDS STARTS -->
+    <div id="features" class="text-center">
+        <div class="container">
+            <div class="section-title">
+                <h1>Events</h1>
+            </div>
+            <div class="row" style="align-items: center;">
+                <div class="card">
+                    <i class="fas fa-search fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Case Study Challenge</p>
+                    <p class="text"><a href="#CSC">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/5FpjT22Ed2WGGMgC7')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-question fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Quiz</p>
+                    <p class="text"><a href="#Quiz">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/tzpiMmMAMWbtpCnw6')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Simulation Software DWSIM Workshop</p>
+                    <p class="text"><a href="#DWSIM">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/YtP64xjmWZKdc6Fe6')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-file-powerpoint fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Research Paper Presentation</p>
+                    <p class="text"><a href="#RPP">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/B1gGHhyDmz6mVhUN7')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-smile-wink fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Chemical Meme Challenge</p>
+                    <p class="text"><a href="#meme">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/EEKSxyHdDmAK2WBW7')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-code fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Code The Problem</p>
+                    <p class="text"><a href="#CTP">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/AVotxPZnXpA5DsVM8')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fab fa-wordpress-simple fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Crosswords</p>
+                    <p class="text"><a href="#CW">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/Np6QqoLf2jBe2Pkb8')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-comments fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Debate</p>
+                    <p class="text"><a href="#Debate">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/ZZaFfAoNdhsf6U1x5')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="far fa-images fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Photography Challenge</p>
+                    <p class="text"><a href="#PC">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/iiwyJtq4kbnR3ZV48')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-industry fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Industry Talks</p>
+                    <p class="text"><a href="#IT">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/iKGUQ1fYzm4hPaPn8')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book-reader fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">Subject Lectures</p>
+                    <p class="text"><a href="#SL">Learn more..</a></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary"
+                            onclick="parent.open('https://forms.gle/wxCLyERVJQbXCoYc8')">Register Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-plus fa-3x" style="margin: 0 auto;
+                    width: 100%;
+                    height: 80px;
+                    max-width: 80px;
+                    background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    transition: all 0.8s ease;
+                    background-size: 200px;"></i>
+                    <p class="title">And Many More...</p>
+                    <p class="text"></p>
+                    <div class="col-12" style="padding-top: 20px; ">
+                        <button type="button-small" class="btn btn-outline-primary disabled">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARDS ENDS -->
+
+
+        <!-- EVENT DETAILS STARTS -->
+        <div id="about" style="background-color: #000;">
+            <div class="event-details">
+                <h1 style="color: #fff; text-align: center; padding-bottom: 10px">Events Details</h1>
+            </div>
+            <div id="CSC" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="case study 1.jpg" class="img-responsive" alt="" style="max-width: 100%;height: auto;" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2 style="color: #fff;">Case Study Challenge</h2>
+                            <p style="color: #fff;">
+                                Want to know how strong your analytical and thinking skills are?
+                            </p>
+                            <p style="color: #fff;">
+                                Come and join us in this <b>Case Study Competition</b> and challenge your abilities to
+                                prepare
+                                innovative solutions to exciting real-life problems and get to win a cash prize of ₹
+                                10,000.
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Participation Rule:</b>
+                            </p>
+                            <li style="color: #fff;">
+                                Any team of students enrolled in any academic institution can participate in this
+                                challenge.
+                            </li>
+                            <li style="color: #fff;">
+                                Team Size: Maximum 4 members in each team
+                            </li>
+                            <li style="color: #fff;">
+                                Cross-Institute teams are allowed.
+                            </li>
+                            <p style="color: #fff;">
+                                <b>
+                                    Registration Deadline: </b>18th January 2022
+
+                            </p>
+                            <p style="color: #fff;">
+                                The problem statement will be sent to the participating teams through an email on 21st
+                                January 2022.
+                            </p>
+                            <button type="button-small" class="btn btn-outline-light"
+                                onclick="parent.open('https://forms.gle/5FpjT22Ed2WGGMgC7')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div id="Quiz" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2>Quiz</h2>
+                            <p><i>“In this day and time, with no competition you are really walking a tightrope. I mean
+                                    you
+                                    may think that no competition is good, but in reality no competition is really bad.”
+                                </i>
+                            </p>
+                            <p>
+                                <b><i>- Jerry Lawler</i></b>
+
+                            </p>
+                            <p>
+                                Adding another competition to the list of challenges of Fugacity, the Chemical
+                                Engineering Association opens registration for the<b> Quiz Challenge.</b>
+                            </p>
+                            <p>
+                                The Quiz will be based on Chemical Engineering Discipline and Industries. It will
+                                consist of a preliminary round and a final round.
+                            </p>
+                            <p>
+                                <b>
+                                    Participation Rule:
+                                </b>
+                                <li>
+                                    Any team of students enrolled in any academic institution can participate in this
+                                    challenge.
+                                </li>
+                                <li>
+                                    Team Size: Maximum 3 members in each team
+                                </li>
+                                <li>
+                                    Cross-Institute teams are allowed.
+                                </li>
+                            <p>
+                                <b>Registration Deadline: 8th February 2022</b>
+                            </p>
+                            <p>
+                                So get your thinking caps on and join us for this event and get an opportunity to win
+                                cash prizes of ₹3000.
+                            </p>
+                            <button type="button-small" class="btn btn-outline-dark"
+                                onclick="parent.open('https://forms.gle/tzpiMmMAMWbtpCnw6')">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="padding-top: 100px">
+                        <img src="quizposter.png" class="img-responsive" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="background-color: #000;">
+            <div id="DWSIM" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="dwsim.png" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2 style="color: #fff;">Simulation Software DWSIM Workshop</h2>
+                            <p style="color: #fff;">
+                                Get a chance to learn how to use the <b>DWSIM </b>application to simulate exciting
+                                chemical
+                                engineering systems.
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Participation Rule:
+                                </b>
+                                <li style="color: #fff;">
+                                    Any student enrolled in any academic institution can participate in this challenge.
+                                </li>
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Registration Deadline: </b>10th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-light"
+                                onclick="parent.open('https://forms.gle/YtP64xjmWZKdc6Fe6')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div id="RPP" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2>Research Paper Presentation</h2>
+                            <p>Listen to research scholars as they present their work and provide an insight into their
+                                research domain and the exciting opportunities that lie there to be explored.
+                            </p>
+                            <p>
+                                <b>Participation Rule: </b>
+                                <li>
+                                    Any student enrolled in any academic institution can participate in this challenge.
+                                </li>
+                            </p>
+                            <p>
+                                <b>Registration Deadline: </b>10th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-dark"
+                                onclick="parent.open('https://forms.gle/B1gGHhyDmz6mVhUN7')">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img src="respaper.png" class="img-responsive" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="background-color: #000;">
+            <div id="meme" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="chem meme.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2 style="color: #fff;">Chemical Meme Challenge</h2>
+                            <p style="color: #fff;">To win exciting cash prizes worth ₹2000, come up with a funny meme
+                                related to the Chemical Engineering field that makes us go ROFL!
+                            </p>
+                            <p style="color: #fff;">
+                                Participation Rule:
+                            </p>
+                            <li style="color: #fff;">
+                                Any student enrolled in any academic institution can participate in this challenge.
+                            </li>
+                            <li style="color: #fff;">Each participant can submit up to 5 entries.
+                            </li>
+                            <p style="color: #fff;">
+                                <b>Theme: </b> Chemical Engineering
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Registration Deadline: </b> 5th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-light"
+                                onclick="parent.open('https://forms.gle/EEKSxyHdDmAK2WBW7')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div id="CTP" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2>Code The Problem</h2>
+                            <p>Can you fuse your knowledge of chemical engineering subjects and your coding skills to
+                                solve exciting problems? Join us to prove your mettle and win a cash prize of ₹10,000.
+                            </p>
+                            <p>
+                                This event consists of three rounds - one preliminary round and two eliminative
+                                out-rounds. In each round, the participants will be given a problem related to chemical
+                                engineering which they must solve using their code.
+                            </p>
+                            <p>
+                                <b>Participation Rule: </b>
+                                <li>Any team of students enrolled in any academic institution can participate in this
+                                    challenge.</li>
+                                <li>Team Size: Maximum 3 members in each team</li>
+                                <li>Cross-Institute teams are allowed.</li>
+                                <li>Language Constraints: You may use C, C++, Java, Python or MATLAB.</li>
+                            </p>
+                            <p>
+                                <b>Registration Deadline:</b> 25th January 2022
+                            </p>
+                            <p>
+                                The problem statement for the preliminary round will be sent to the participating teams
+                                through an email on 25th January 2022.
+                            </p>
+                            <button type="button-small" class="btn btn-outline-dark"
+                                onclick="parent.open('https://forms.gle/AVotxPZnXpA5DsVM8')">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img src="CODE THE PROBLEM.jpg" class="img-responsive" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="background-color: #000;">
+            <div id="CW" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="photo2.png" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2 style="color: #fff;">Crosswords
+                            </h2>
+                            <p style="color: #fff;">
+                                If you are really enthusiastic and willing to analyze your wit along with knowledge of
+                                chemical engineering, we are here with <b>CROSSWORD</b> for you.
+                            </p>
+                            <p style="color: #fff;">
+                                Solve your way through a puzzle of blocks and win the race to win cash prize of ₹2,000.
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Participation Rule:</b>
+                                <li style="color: #fff;">Any team of students enrolled in any academic institution can
+                                    participate in this challenge.</li>
+                                <li style="color: #fff;">Team Size: Maximum 2 members in each team</li>
+                                <li style="color: #fff;">Cross-Institute teams are allowed.</li>
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Registration Deadline: </b>8th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-light"
+                                onclick="parent.open('https://forms.gle/Np6QqoLf2jBe2Pkb8')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div id="Debate" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2>Debate</h2>
+                            <p>
+                                With a structured case, witty arguments and indomitable rebuttals, get a chance to win
+                                cash prize of ₹2,000 in the <b>Debate Championship</b> of Fugacity.
+                            </p>
+                            <p>
+                                <b>
+                                    Participation Rule:
+                                </b>
+                                <li>Any student enrolled in any academic institution can participate in this challenge.
+                                </li>
+                            </p>
+                            <p>
+                                <b>Registration Deadline: </b>8th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-dark"
+                                onclick="parent.open('https://forms.gle/ZZaFfAoNdhsf6U1x5')">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img src="DEBATE.jpg" class="img-responsive" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="background-color: #000;">
+            <div id="PC" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="photochlg.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2 style="color: #fff;">Photography Challenge</h2>
+                            <p style="color: #fff;"><i>
+                                    “Photography is an austere and blazing poetry of the real.”
+                                </i>
+                            </p>
+                            <p style="color: #fff;">
+                                <b><i>- Ansel Adams</i></b>
+                            </p>
+                            <p style="color: #fff;">
+                                Participate in the <b>Photography Challenge</b> of Fugacity and enchant with your clicks
+                                to win
+                                cash prize of ₹2,000.
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Participation Rule:
+                                </b>
+                                <li style="color: #fff;">
+                                    Any student enrolled in any academic institution can participate in this challenge.
+                                </li>
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Theme: </b> Chemical Engineering in our daily lives
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Registration Deadline: </b> 5th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-light"
+                                onclick="parent.open('https://forms.gle/iiwyJtq4kbnR3ZV48')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div id="IT" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2>Industry Talks</h2>
+                            <p>Join us for interactive sessions with experts of Oil and Petroleum Industry,
+                                Pharmaceutical Industry and FMCG Industry as they share their insights into industrial
+                                work and life.
+                            </p>
+                            <p>
+                                <b>Participation Rule:</b>
+                                <li>
+                                    Any student enrolled in any academic institution can participate in this challenge.
+                                </li>
+                            </p>
+                            <p>
+                                <b>
+                                    Registration Deadline:
+                                </b>
+                                5th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-dark"
+                                onclick="parent.open('https://forms.gle/iKGUQ1fYzm4hPaPn8')">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <img src="IndTalk.png" class="img-responsive" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="background-color: #000;">
+            <div id="SL" class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="LECTURE.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <h2 style="color: #fff;">Subject Lectures</h2>
+                            <p style="color: #fff;">Join to learn about exciting research domains and to know more about
+                                interdisciplinary disciplines of Chemical Engineering, Biochemistry, Nano-technology,
+                                Artificial Intelligence and Machine Learning, and much more. Lecture Talks by professors
+                                from esteemed institutions worldwide about their research expertise domains and
+                                inspiring work.
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Participation Rule:</b>
+                                <li style="color: #fff;">
+                                    Any student enrolled in any academic institution can participate in this challenge.
+                                </li>
+                            </p>
+                            <p style="color: #fff;">
+                                <b>Registration Deadline:
+                                </b>
+                                5th February 2022
+                            </p>
+                            <button type="button-small" class="btn btn-outline-light"
+                                onclick="parent.open('https://forms.gle/wxCLyERVJQbXCoYc8')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EVENT DETAILS ENDS -->
+
+
+
+    <!-- FOOTER STARTS -->
+    <div style="background-color: black;"> 
+      <footer class="my-1 mx-auto" id="contact">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2 text-muted">Register</a></li>
+          <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2 text-muted">Events</a></li>
+          <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+          <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <div>
+          <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2" style="color: #FFFFFF; font-size: 1.5rem;  padding-top: 3%;"><i class="fab fa-facebook"></i></a></li>
+            <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2" style="color: #FFFFFF; font-size: 1.5rem;  padding-top: 3%;"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2" style="color: #FFFFFF; font-size: 1.5rem;  padding-top: 3%;"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="nav-item" style="color: #FFFFFF;"><a href="#" class="nav-link px-2" style="color: #FFFFFF; font-size: 1.5rem; padding-top: 3%;"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        
+        <p class="text-center text-muted" style="color: #FFFFFF;">© 2022 Chemical Engineering Association, IIT KGP</p>
+      </footer>
+    </div>
+    <!-- FOOTER ENDS -->
+</body>
+
+</html>

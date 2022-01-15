@@ -1,0 +1,212 @@
+body,html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Prompt', sans-serif;
+}
+/* Header Section */
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url('intro-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #283747;
+  opacity: 80%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.god{
+  padding-left: 78%;
+}
+.navbar-custom{
+  background-color: black;
+}
+.custom-toggler.navbar-toggler {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='1 1 30 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(41, 217, 175, 1)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='0' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: rgba(41, 217, 175, 1);
+}
+.navbar-text {
+  color: white;
+  text-shadow: 0px 4px 17px rgba(41, 217, 175, 1);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.intro h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  /* padding-left: 95%; */
+}
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb;
+}
+.intro p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background-color: #000;
+}
+header .intro-text {
+  padding-top: 360px;
+  padding-bottom: 200px;
+  text-align: center;  
+}
+/* Features Section */
+#features {
+  background: #f6f6f6;
+}
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+/* About Section */
+#about {
+  padding: 15px 0;
+}
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#about h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5ca9fb;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#about img {
+  width: 520px;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  #about img {
+    margin: 50px 0;
+  }
+}
+.events-icon{
+    padding-bottom: 50px;
+}
+.card{
+  width: 300px;
+  height: 280px;
+  background-color: #fff;
+  margin: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.24);
+  cursor: pointer;
+  border: 0;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg , rgba(255,255,255,1) 80% , rgba(35,72,255,1) 82%);
+  background-size: 450px;
+}
+
+.icon{
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 80px;
+  background: linear-gradient(90deg, rgba(126,148,255,1) 41%,rgba(0,0,0,1) 53%);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.8s ease;
+  background-size: 200px;
+}
+.card .title{
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.card .text{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.card:hover{
+  height: 300px;
+  background-position: -80px;
+}
+.card:hover .info{
+  height: 90%;
+}
+.card:hover .text{
+  opacity: 1;
+  max-height: 40px;
+}
+.card:hover .icon{
+  background-position: -100px;
+  transition: all 0.4s ease-in-out;
+  color: #2348ff;
+}
+.carou{
+   height: 700px;
+}
+.event-details{
+  padding-top: 30px;
+}
